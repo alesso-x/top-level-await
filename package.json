@@ -1,10 +1,9 @@
 {
   "name": "top-level-await",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/sleep.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "axios": "node --experimental-top-level-await src/axios.js",
     "sleep": "node --experimental-top-level-await src/sleep.js",
     "ts_node_axios": "node --loader ts-node/esm --experimental-top-level-await src/axios.ts",
