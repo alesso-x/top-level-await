@@ -5,7 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony-top-level-await src/index.js"
+    "axios": "node --experimental-top-level-await src/axios.js",
+    "sleep": "node --experimental-top-level-await src/sleep.js",
+    "ts_node_axios": "node --loader ts-node/esm --experimental-top-level-await src/axios.ts",
+    "ts_node_sleep": "node --loader ts-node/esm --experimental-top-level-await src/sleep.ts",
+    "ts_node_dev_axios": "ts-node-dev --experimental-top-level-await -- src/axios.ts",
+    "ts_node_dev_sleep": "ts-node-dev --experimental-top-level-await -- src/sleep.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +18,11 @@
   "description": "",
   "dependencies": {
     "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.62",
+    "typescript": "^4.0.2"
   }
 }
