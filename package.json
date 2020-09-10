@@ -1,11 +1,11 @@
 {
   "name": "top-level-await",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --harmony-top-level-await index.js"
+    "start": "node --harmony-top-level-await src/index.js"
   },
   "keywords": [],
   "author": "",
