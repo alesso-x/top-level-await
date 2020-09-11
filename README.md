@@ -10,5 +10,5 @@ npm run start
 npm run ts_node_start
 
 # ts-node-dev (does not work)
-ts_node_dev_start
+npm run ts_node_dev_start
 ```
