@@ -4,12 +4,12 @@
   "main": "src/sleep.js",
   "type": "module",
   "scripts": {
-    "axios": "node --experimental-top-level-await src/axios.js",
-    "sleep": "node --experimental-top-level-await src/sleep.js",
-    "ts_node_axios": "node --loader ts-node/esm --experimental-top-level-await src/axios.ts",
-    "ts_node_sleep": "node --loader ts-node/esm --experimental-top-level-await src/sleep.ts",
-    "ts_node_dev_axios": "ts-node-dev --experimental-top-level-await -- src/axios.ts",
-    "ts_node_dev_sleep": "ts-node-dev --experimental-top-level-await -- src/sleep.ts"
+    "axios": "node src/axios.js",
+    "sleep": "node src/sleep.js",
+    "ts_node_axios": "node --experimental-modules --experimental-specifier-resolution=node --loader ts-node/esm src/axios.ts",
+    "ts_node_sleep": "node --loader ts-node/esm src/sleep.ts",
+    "ts_node_dev_axios": "ts-node-dev -- src/axios.ts",
+    "ts_node_dev_sleep": "ts-node-dev -- src/sleep.ts"
   },
   "keywords": [],
   "author": "",
