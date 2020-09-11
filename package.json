@@ -4,12 +4,12 @@
   "main": "src/sleep.js",
   "type": "module",
   "scripts": {
+    "start": "node src/sleep.js",
     "axios": "node src/axios.js",
-    "sleep": "node src/sleep.js",
+    "ts_node_start": "node --loader ts-node/esm src/sleep.ts",
     "ts_node_axios": "node --loader ts-node/esm src/axios.ts",
-    "ts_node_sleep": "node --loader ts-node/esm src/sleep.ts",
-    "ts_node_dev_axios": "ts-node-dev -r esm src/axios.ts",
-    "ts_node_dev_sleep": "ts-node-dev -r esm src/sleep.ts"
+    "ts_node_dev_start": "ts-node-dev src/sleep.ts",
+    "ts_node_dev_axios": "ts-node-dev src/axios.ts"
   },
   "keywords": [],
   "author": "",
