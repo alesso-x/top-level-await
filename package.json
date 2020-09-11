@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node src/sleep.js",
-    "axios": "node src/axios.js",
     "ts_node_start": "node --loader ts-node/esm src/sleep.ts",
-    "ts_node_axios": "node --loader ts-node/esm src/axios.ts",
     "ts_node_dev_start": "ts-node-dev src/sleep.ts",
-    "ts_node_dev_axios": "ts-node-dev src/axios.ts"
+    "ts_node_dev_start_with_esm": "ts-node-dev -r esm src/sleep.ts"
   },
   "keywords": [],
   "author": "",
